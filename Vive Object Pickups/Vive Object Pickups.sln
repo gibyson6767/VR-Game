@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{817C8871-2F16-277F-0F10-C04106773912}") = "Vive Object Pickups", "Assembly-CSharp-firstpass.csproj", "{34206791-2F25-38BC-5D2B-6DC8D5E475A7}"
+EndProject
+Project("{817C8871-2F16-277F-0F10-C04106773912}") = "Vive Object Pickups", "Assembly-CSharp.csproj", "{A094DD6F-6579-99CA-FF7E-754EDA4CF4FB}"
+EndProject
+Project("{817C8871-2F16-277F-0F10-C04106773912}") = "Vive Object Pickups", "Assembly-CSharp-Editor.csproj", "{D0CF38DE-0BE1-486B-B908-A8EA4BC05F69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34206791-2F25-38BC-5D2B-6DC8D5E475A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34206791-2F25-38BC-5D2B-6DC8D5E475A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34206791-2F25-38BC-5D2B-6DC8D5E475A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34206791-2F25-38BC-5D2B-6DC8D5E475A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A094DD6F-6579-99CA-FF7E-754EDA4CF4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A094DD6F-6579-99CA-FF7E-754EDA4CF4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A094DD6F-6579-99CA-FF7E-754EDA4CF4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A094DD6F-6579-99CA-FF7E-754EDA4CF4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CF38DE-0BE1-486B-B908-A8EA4BC05F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CF38DE-0BE1-486B-B908-A8EA4BC05F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CF38DE-0BE1-486B-B908-A8EA4BC05F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CF38DE-0BE1-486B-B908-A8EA4BC05F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
