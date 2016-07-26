@@ -16,6 +16,11 @@ public class ButtonColliderHandler : MonoBehaviour {
 		{
 			button = collider.gameObject;
 			colliding = true;
+			Debug.Log("Controller is over a button.");
+		}
+		else
+		{
+			Debug.Log("Controller collided with a non-button!");
 		}
 	}
 

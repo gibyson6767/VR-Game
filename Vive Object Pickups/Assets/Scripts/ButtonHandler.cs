@@ -12,6 +12,7 @@ public class ButtonHandler : MonoBehaviour {
 	//Called when controller is instanititated or game starts
 	void Awake() /*Using start may cause errors with the tracked object finding*/ {
 
+		Debug.Log("Button Handler initializing...");
 		overButton = false;
 		track = GetComponent<SteamVR_TrackedObject>();
 		foreach(Transform child in transform.parent)
@@ -19,6 +20,7 @@ public class ButtonHandler : MonoBehaviour {
 			if(child.name == "Sphere")
 			{
 				colliderObj = child.gameObject;
+				Debug.Log("Collider Object found!");
 			}
 		}
 
@@ -116,13 +118,13 @@ public class ButtonHandler : MonoBehaviour {
 	//Called when the trigger is first BEING pressed down
 	void triggerSlightlySqueezed()
 	{
-
+		Debug.Log("Trigger is now slightly squeezed.");
 	}
 
 	//Called when trigger is fully released
 	void triggerNoLongerSlightlySqueezed()
 	{
-
+		Debug.Log("Trigger isn't slightly squeezed.");
 	}
 
 	//Called every tick while grip is touched
@@ -134,13 +136,13 @@ public class ButtonHandler : MonoBehaviour {
 	//Called once grip is first touched
 	void gripSlightlySqueezed()
 	{
-
+		Debug.Log("Grip Pressed");
 	}
 
 	//Called when grip is no longer touched
 	void gripNoLongerSlightlySqueezed()
 	{
-
+		Debug.Log("Grip isn't slightly squeezed.");
 	}
 
 	//Called every tick while trigger is all the way down
@@ -152,9 +154,15 @@ public class ButtonHandler : MonoBehaviour {
 	//Called when trigger is all the way down; If colliderObj is detecting collision when this is called, the button performs it's assigned action
 	void triggerSqueezed()
 	{
+		Debug.Log("Trigger pressed!");
 		if (overButton)
 		{
 			colliderObj.GetComponent<ButtonColliderHandler>().button.GetComponent<ButtonController>().performAction();
+			Debug.Log("Button should have outputted message to Log.");
+		}
+		else
+		{
+			Debug.Log("Trigger was squeezed, but no button was detected!");
 		}
 	}
 
