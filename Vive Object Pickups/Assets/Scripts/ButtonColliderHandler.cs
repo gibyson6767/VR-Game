@@ -7,6 +7,7 @@ public class ButtonColliderHandler : MonoBehaviour {
 	public GameObject button;
 
 	void Start (){
+		Debug.Log("Collider Handler Started");
 		colliding = false;
 	}
 

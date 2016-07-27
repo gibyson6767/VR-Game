@@ -9,6 +9,12 @@ public class ButtonHandler : MonoBehaviour {
 	GameObject colliderObj;
 	SteamVR_Controller.Device device;
 
+	void Start()
+	{
+		Debug.Log("Button Handler Started!");
+		Awake();
+	}
+
 	//Called when controller is instanititated or game starts
 	void Awake() /*Using start may cause errors with the tracked object finding*/ {
 
