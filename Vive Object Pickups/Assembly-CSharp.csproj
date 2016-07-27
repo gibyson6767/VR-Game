@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scripts\ButtonColliderHandler.cs" />
      <Compile Include="Assets\Scripts\ButtonController.cs" />
      <Compile Include="Assets\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Scripts\TestInputImplementer.cs" />
+     <Compile Include="Assets\Scripts\VRControllerInput.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
