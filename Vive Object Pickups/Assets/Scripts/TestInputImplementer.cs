@@ -7,9 +7,10 @@ class TestInputImplementer : VRControllerInput {
 	public override void setTrackedObject()
 	{
 		controllerObject = me.GetComponent<SteamVR_TrackedObject>();
-	}
+        Debug.Log("I AM ATTATCHED TO: " + me.name);
+    }
 
-	void Start()
+	public void Start()
 	{
 		me = gameObject;
 	}
@@ -36,7 +37,7 @@ class TestInputImplementer : VRControllerInput {
 
 	protected override void touchpadPressDown()
 	{
-		Debug.Log("App Button has been pressed!");
+		Debug.Log("Touchpad has been pressed!");
 	}
 
 }

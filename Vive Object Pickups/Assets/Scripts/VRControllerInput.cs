@@ -36,7 +36,8 @@ public abstract class VRControllerInput : MonoBehaviour{
 		{
 			Debug.Log("The controller was never defined?!?!");
 			setTrackedObject();
-		}
+            objectDefined = controllerObject != null;
+        }
 	}
 
 	//Calls apropriate methods from input
